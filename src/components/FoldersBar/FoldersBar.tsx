@@ -10,17 +10,14 @@ import {
     NavigationMenuList,
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
+import { Button } from "../ui/button"
 
-const NavBar = () => {
+const FoldersBar = () => {
     return (
         <NavigationMenu>
             <NavigationMenuList>
                 <NavigationMenuItem>
-                    <Link href="/" legacyBehavior passHref>
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                            Clever Box (Chat)
-                        </NavigationMenuLink>
-                    </Link>
+                    <Button>ADD NEW</Button>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                     <Link href="/data-store" legacyBehavior passHref>
@@ -34,4 +31,4 @@ const NavBar = () => {
     )
 }
 
-export default NavBar
+export default FoldersBar
